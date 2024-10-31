@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMC Employees Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>LMC Employees Register</h2>
+        <form action="register.php" method="POST">
+            <label for="Full_Name">Nom complet</label>
+            <input type="text" id="Full_Name" name="Full_Name" placeholder="Entrez le nom complet" aria-label="Nom complet" required>
+
+            <label for="Adress">Adresse</label>
+            <input type="text" id="Adress" name="Adress" placeholder="Entrez l'adresse" aria-label="Adresse" required>
+
+            <label for="Phone_number">Numéro de téléphone</label>
+            <input type="tel" id="Phone_number" name="Phone_number" placeholder="Ex: +25712345678" maxlength="15" pattern="[+0-9]{8,15}" aria-label="Numéro de téléphone" required>
+
+            <label for="Email">Email</label>
+            <input type="email" id="Email" name="Email" placeholder="exemple@domaine.com" aria-label="Email" required>
+
+            <label for="Date">Date</label>
+            <input type="date" id="Date" name="Date" aria-label="Date" required>
+
+            <label for="School">École</label>
+            <input type="text" id="School" name="School" placeholder="Entrez le nom de l'école" aria-label="École" required>
+
+            <label for="Level">Niveau</label>
+            <input type="text" id="Level" name="Level" placeholder="Entrez le niveau d'études" aria-label="Niveau" required>
+
+            <button type="submit">Enregistrer</button>
+        </form>
+    </div>
+</body>
+</html>
